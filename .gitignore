@@ -1,3 +1,11 @@
+bird/experiments
+bird/dataset
+bird/checkpoints_bird
+
+clver/experiments
+clver/checkpoints_clver
+clver/dataset_clver
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

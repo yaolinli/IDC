@@ -1,0 +1,28 @@
+{
+    "n_embs": 512, 
+    "img_embs": 2048,
+    "dim_ff": 2048,
+    "n_head": 8,
+    "n_block": 3,
+
+    "weight_decay": 0.0,
+    "l2_wd": 0.0,
+    "lr": 3e-5,
+    "total_train_steps": 100000,
+    "report": 400,
+    "batch_size": 200,
+    "dropout": 0.2,
+    "max_len": 40,
+
+    "beam_size": 1,
+    "early_stop": 50,
+    "gpu_id": 0,
+
+    "main_metric": "CIDEr",
+    "out_file": "result.json",
+    "dataset": "clver",
+    "exp_name": "clver",
+    "data_path": "./dataset_clver/",
+    "vocab_path": "./dataset_clver/dict.json",
+    "restore": ""
+}

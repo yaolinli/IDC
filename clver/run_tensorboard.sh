@@ -1,0 +1,1 @@
+tensorboard --logdir=./experiments/pretrain_clver_neg_tfidf6_t1.0/log --host=0.0.0.0  --port=8080

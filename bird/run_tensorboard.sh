@@ -1,0 +1,1 @@
+tensorboard --logdir=./experiments/pretrain_cub/log --host=0.0.0.0  --port=8080

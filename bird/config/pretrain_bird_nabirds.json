@@ -1,0 +1,48 @@
+{
+    "dataset": "bird",
+    "n_embs": 512, 
+    "img_embs": 2048,
+    "dim_ff": 2048,
+    "n_head": 8,
+    "n_block": 2,
+
+    "weight_decay": 0.0,
+    "lr": 1e-4,
+    "warmup_steps": 4000,
+    "valid_steps": 200,
+    "total_train_steps": 60000,
+    "batch_size": 150,
+    "dropout": 0.2,
+    "max_len": 80,
+
+    "gpu_id": 0,
+
+    "beam_size": 1,
+    "early_stop": -1,
+    "out_file": "result.json",
+
+    "exp_name": "bird",
+    "data_path": "./dataset/bird/",
+    "vocab_path": "./dataset/bird/dict_cub_bird.json",
+    "nabirds_data_path": "./dataset/nabirds/",
+    "restore": "",
+    "neg_name": "neg_tfidf6",
+
+    "pretrain_tasks": [
+        "mlm",
+        "mvm_contrst",
+        "fda",
+        "nabirds"
+    ],
+    
+    "r": {
+        "mlm": 9,
+        "mvm": 1,
+        "mvm_contrst": 1,
+        "itm_a": 2,
+        "itm_b": 2,
+        "fda": 2,
+        "nabirds": 3
+    }
+
+}

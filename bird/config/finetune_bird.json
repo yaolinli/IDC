@@ -1,0 +1,27 @@
+{
+    "n_embs": 512, 
+    "img_embs": 2048,
+    "dim_ff": 2048,
+    "n_head": 8,
+    "n_block": 2,
+
+    "weight_decay": 1e-4,
+    "lr": 3e-5,
+    "total_train_steps": 20000,
+    "report": 85,
+    "batch_size": 128,
+    "dropout": 0.2,
+    "max_len": 80,
+
+    "beam_size": 1,
+    "early_stop": 80,
+    "gpu_id": 0,
+
+    "main_metric": "ROUGE_L",
+    "out_file": "result.json",
+    "dataset": "bird",
+    "exp_name": "bird",
+    "data_path": "./dataset/bird/",
+    "vocab_path": "./dataset/bird/dict_cub_bird.json",
+    "restore": ""
+}
