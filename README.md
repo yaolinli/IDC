@@ -23,7 +23,7 @@ pip install -r requirements.txt
 
 ## Data Download
 
-We provide the pre-processed image features (by pre-trained ResNet101) , the annotations and the constructed negative data samples of CLEVR-Change and Birds-to-Words dataset  in  [Coming soon]() .
+We provide the pre-processed image features (by pre-trained ResNet101) , the annotations and the constructed negative data samples of CLEVR-Change and Birds-to-Words dataset  in  [baiduyun password:6zv0](https://pan.baidu.com/s/1bY6jOU0eQEcV9nTBXfrhQQ) .
 
 You should put the files under the corresponding`./clver`  or  `./bird`  folder as follows:
 
@@ -93,6 +93,7 @@ We also provide the pre-trained and fine-tuned checkpoints at [baidu yun (passwo
 
 
 
+
 ## Birds-to-Words dataset 
 
 `cd  ./bird`
@@ -133,11 +134,12 @@ python3.6 eval_models.py --dataset bird \
 --gtfile ../bird/dataset/bird/test_self.json
 ```
 
-We also provide the pre-trained and fine-tuned checkpoints at [baidu yun (password: )](). The  reported results on Birds-to-Words  dataset are as follows:
+We also provide the pre-trained and fine-tuned checkpoints at [baidu yun (password:to5a)](https://pan.baidu.com/s/1i-6o6MGJN-3_NQaDquj8Uw). The  reported results on Birds-to-Words  dataset are as follows:
 
 | Dataset        | BLEU4 | METEOR | CIDEr-D | ROUGE-L |
 | -------------- | ----- | ------ | ------- | ------- |
 | Birds-to-Words | 31.0  | 23.4   | 25.3    | 49.1    |
+
 
 
 
