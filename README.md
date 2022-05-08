@@ -23,7 +23,7 @@ pip install -r requirements.txt
 
 ## Data Download
 
-We provide the pre-processed image features (by pre-trained ResNet101) , the annotations and the constructed negative data samples of CLEVR-Change and Birds-to-Words dataset  in  [baidu cloud]() .
+We provide the pre-processed image features (by pre-trained ResNet101) , the annotations and the constructed negative data samples of CLEVR-Change and Birds-to-Words dataset  in  [Coming soon]() .
 
 You should put the files under the corresponding`./clver`  or  `./bird`  folder as follows:
 
@@ -100,8 +100,8 @@ We also provide the pre-trained and fine-tuned checkpoints at [baidu yun (passwo
 #### Pre-training
 
 We adopt cross-task data expansion strategy  on  Birds-to-Words dataset to provide additional in-domain knowledge.  Specifically, we utilize extra data from general image captioning (GIC), that is the CUB dataset, and Fine-grained visual classification (FGVC), that is the NABirds dataset. 
+![extra_data](https://user-images.githubusercontent.com/24662157/167284467-8ac15b2f-9108-4247-ac5e-99edb8a4a4d3.jpg)
 
-(img)
 
 ```
 # Stage 1: training with CUB dataset
