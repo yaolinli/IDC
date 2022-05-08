@@ -63,9 +63,10 @@ datas = load_data(args.data_path, args.dataset, images)
 
 
 if 'fda' in args.pretrain_tasks:
-    neg_datas = load_neg_data(args.neg_num, args.data_path, args.dataset)
+    neg_datas = load_neg_data_cub(args.neg_num, args.data_path, args.dataset)
     
-    
+if not os.path.exists('./experiments'):
+    os.mkdir('./experiments')
 out_path = os.path.join('experiments', args.exp_name)
 if not os.path.exists(out_path):
     os.mkdir(out_path)

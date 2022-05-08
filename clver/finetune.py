@@ -51,6 +51,8 @@ images = load_split_images(args.data_path)
 vocabs, rev_vocabs = load_vocabs(args.vocab_path)
 vocab_size = len(vocabs)
 
+if not os.path.exists('./experiments'):
+    os.mkdir('./experiments')
 out_path = os.path.join('experiments', args.exp_name)
 if not os.path.exists(out_path):
     os.mkdir(out_path)

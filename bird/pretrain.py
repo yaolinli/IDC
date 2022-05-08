@@ -65,6 +65,8 @@ if 'nabirds' in pretrain_tasks:
 if 'fda' in args.pretrain_tasks:
     neg_datas = load_neg_data(args.neg_name, args.data_path, args.dataset, images)
 
+if not os.path.exists('./experiments'):
+    os.mkdir('./experiments')
 out_path = os.path.join('experiments', args.exp_name)
 if not os.path.exists(out_path):
     os.mkdir(out_path)

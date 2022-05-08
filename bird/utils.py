@@ -128,6 +128,26 @@ def load_neg_data(neg_name, data_path, dataset, images=None):
         all_datas[split] = datas
     return all_datas
 
+def load_neg_data_cub(neg_num, data_path, dataset, images=None):
+    all_datas = {}
+    for split in ['train', 'val']:
+        datas = []
+        print("read: "+data_path + split + '_neg_tfidf{}.json'.format(neg_num))
+        with open(data_path + split + '_neg_tfidf{}.json'.format(neg_num), 'r', encoding='utf-8') as fin:
+            for line in fin:
+                jterm = json.loads(line.strip())
+                # change multi description to one description per data
+                for des in jterm['sentences']:
+                    new_jterm = {}
+                    new_jterm['img'] = jterm['img']
+                    new_jterm['description'] = des.split(' ')
+                    new_jterm['negs'] = [cap.split(' ') for cap in jterm['neg_samples']]
+                    datas.append(new_jterm)
+        print('dataset:', dataset, 'Negtive {} datas '.format(split), len(datas))
+        random.shuffle(datas)
+        all_datas[split] = datas
+    return all_datas
+
 def noam_schedule(step, warmup_step=4000):
     """ original Transformer schedule"""
     if step <= warmup_step:

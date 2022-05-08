@@ -22,8 +22,8 @@
     "out_file": "result.json",
 
     "exp_name": "cub",
-    "data_path": "./dataset_cub/",
-    "vocab_path": "./dataset_cub/dict_cub_bird.json",
+    "data_path": "./dataset/cub/",
+    "vocab_path": "./dataset/cub/dict_cub_bird.json",
     "restore": "",
     "neg_num": 6,
     "pretrain_tasks": [
