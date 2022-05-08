@@ -100,7 +100,7 @@ We also provide the pre-trained and fine-tuned checkpoints at [baidu yun (passwo
 #### Pre-training
 
 We adopt cross-task data expansion strategy  on  Birds-to-Words dataset to provide additional in-domain knowledge.  Specifically, we utilize extra data from general image captioning (GIC), that is the CUB dataset, and Fine-grained visual classification (FGVC), that is the NABirds dataset. 
-![extra_data](https://user-images.githubusercontent.com/24662157/167284467-8ac15b2f-9108-4247-ac5e-99edb8a4a4d3.jpg)
+![data](https://user-images.githubusercontent.com/24662157/167285138-b3fb9939-13fa-48ab-8bbe-c31b7babcf4f.JPG)
 
 
 ```
