@@ -146,12 +146,11 @@ We also provide the pre-trained and fine-tuned checkpoints at [baidu yun (passwo
 ## Citation
 
 ```
-@article{Yao2022ImageDC,
+@inproceedings{Yao2022ImageDC,
   title={Image Difference Captioning with Pre-training and Contrastive Learning},
-  author={Linli Yao and Weiying Wang and Qin Jin},
-  journal={ArXiv},
-  year={2022},
-  volume={abs/2202.04298}
+  author={Yao, Linli and Wang, Weiying and Jin, Qin},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  year={2022}
 }
 ```
 
